@@ -1,7 +1,7 @@
 const TelegramApi = require('node-telegram-bot-api');
 const { gameOptions, againOptions } = require('./options.js');
 
-const token = '5167807357:AAE2bGgzp505dT8cmDzvV9V90ju2fga9_hY';
+const token = '***';
 
 const bot = new TelegramApi(token, { polling: true });
 
@@ -26,7 +26,7 @@ const start = () => {
         const chatId = msg.chat.id;
 
         if (text === '/start') {
-            await bot.sendSticker(chatId, '***')
+            await bot.sendSticker(chatId, 'https://cdn.tlgrm.app/stickers/88e/586/88e586f0-4299-313f-bedb-ef45c7710422/192/1.webp')
             return bot.sendMessage(chatId, `Чат Georaz приветствует тебя.`)
         }
         if (text === '/info') {

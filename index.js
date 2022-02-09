@@ -26,7 +26,7 @@ const start = () => {
         const chatId = msg.chat.id;
 
         if (text === '/start') {
-            await bot.sendSticker(chatId, 'https://tlgrm.ru/_/stickers/e65/38d/e6538d88-ed55-39d9-a67f-ad97feea9c01/1.webp')
+            await bot.sendSticker(chatId, '***')
             return bot.sendMessage(chatId, `Чат Georaz приветствует тебя.`)
         }
         if (text === '/info') {
